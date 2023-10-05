@@ -5,6 +5,33 @@
        
        <style>
 
+
+.box{
+    height: 400px;
+    width: 400px;
+    border: 5px solid black;
+    margin: 20px auto;
+    position: relative;
+}
+
+.box1 , .box2{
+    height: 150px;
+    width: 150px;
+
+}
+
+.box1{
+    background-color: rgb(174, 118, 45);
+    position: sticky;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+.box2{
+    background-color: #9d5353;
+}
+
 /* this is for the body of the page */
 body{
     background: #434141 url("images.png") no-repeat left bottom;
@@ -22,8 +49,9 @@ border-color: #9d5353 black burlywood darkblue;
 border-radius: 10px;
 width: 400px;
 background-color: aqua;
-padding: 50px;
-margin: 30px;
+padding-right: 50px;
+margin-left: 30px;
+
 }
 
 a{
@@ -33,6 +61,14 @@ a{
 
 a:hover{
     color: #9d5353;
+}
+
+nav{
+    background-color: aqua;
+    color: antiquewhite;
+    position:sticky;
+    top:0px;
+    z-index: 1;
 }
        </style>
 
@@ -44,6 +80,20 @@ a:hover{
 
     </head>
     <body dir="rtl">
+
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+
+<div class="box">
+    <div class="box1"></div>
+    <div class="box2"></div>
+</div>
+
        <h1>دورة HTML</h1> <!--title-->
        <H2>وصف الدورة</H2> <!--sub title-->
       <p> <!--Description-->
